@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Blueprint Chapter 8 Working With Windows</title>
+</head>
+<body onload="window.status='Set the text displayed in the status bar which appears not working.'";>
+<p>JavaScript includes two parent objects to control the appearance and look of a browser window:  window and document.  Window object is the top-level parent for all objects which includes document, location, and history.  Document object allows access to the various HTML elements.</p>
+
+<p>Link addresses are displayed by the browser by default and cannot be overwritten with other text.</p>
+
+<p>document.bgColor change background color.  document.fgColor change text color.  document.linkColor change link color.  document.alinkColor change active link color.  document.vlinkColor change visited link color.  <a href="ch06handlingevents.html">Ch 6 Handling Events</a></p>
+
+<p>document.title changes the title on the title bar.</p>
+
+<h3><a href="javascript:windowopen('ch08workingwithwindowsbefore.html')">Ch 8 Before window.open()</a></h3>
+
+<p>JavaScript includes window.back() for the toolbar's Back and window.forward() for the toolbar's Forward.  Also window.home() for the toolbar's Home.  window.stop() for Stop.</p>
+
+<p>Also, JavaScript has window.moveTo() and window.moveBy() moves a window.  window.resizeTo(), window.resizeBy(), window.scrollTo(), window.scrollBy()</p>
+
+<p>The alert dialog box is window.alert("alert message here").  Other dialog boxes are window.prompt() and window.confirm().</p>
+
+<script type="text/javascript" src="ch08workingwithwindows.js"></script>
+</body>
+</html>

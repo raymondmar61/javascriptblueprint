@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Blueprint Chapter 6 Handling Events</title>
+</head>
+<body>
+<p>You can position JavaScript events within HTML tags like other attributes.  You can set them equal to a small ine of JavaScript code or to the name of a JavaScript function declared elsewhere in the webpage.</p>
+
+<p>E.g. <button onclick="blink();">blink()</button> executes the function blink() after clicked.</p>
+
+<p>Mouse events:  onclick user clicks the mouse once click and release, ondblclick user clicks the mouse twice for which onclick is activated too, onmousedown mouse button pressed down, onmouseup mouse button is released, onmouseover mouse cursor moves over the top of an element, onmouseout mouse coursor moves off an element.  onmousemove event is activated when the mouse moves which is also activated when onmouseover or onmouseout events are activated.</p>
+
+<p>Keyboard events:  onkeypress detect a key on the keyboard is pressed, onkeydown detects after the key is first pressed and held down, onkeyup detects after the pressed key is released.</p>
+
+<p>Selection events:  onfocus an element has the focus, onblur element loses the focus, onselect select an element.</p>
+
+<p>onchange data of the form element is changed.  onload detect when a webpage is finished loading.  onunload activated when a webpage is unloaded or leave the current page or refresh the current webpage.  onabord activated when a loading webpage is cancelled.  onsubmit is submit.  onreset is reset.</p>
+
+<p>onkeypress detects a keystroke on the keyboard is pressed.  onkeydown detects a user press a keyboard and not release the key.  Conversely, onkeyup detects the key released?  onkeydown and onkeyup are activated whenever onkeypress is fired.  onkeydown event is detected before onkeyup.</p>
+
+<p>An element has the focus use onfocus event.  onblur event when an element loses focus.</p>
+
+<p>Other handling events:  onchange for forms, onload, onunload, onabort, onerror, </p>
+
+<form name="formname1">
+<input type="button" name="buttonname1" value="Hello" onclick="document.formname1.buttonname1.value='How\'s it going'" ondblclick="document.formname1.buttonname1.value='I hope you\'re doing good'";>
+</form>
+
+<img src="G:\Raymond\javascript\images\kate.gif" onmouseover="document.images[0].src='G:\\Raymond\\javascript\\images\\petruchio.gif';" onmouseout="document.images[0].src='G:\\Raymond\\javascript\\images\\kate.gif';">
+<p name="test" onmouseover="document.test.value='Did I pass'";>This is a test.</p>
+<script type="text/javascript" src="ch06handlingevents.js"></script>
+</body>
+</html>
